@@ -90,7 +90,7 @@ if __name__ == "__main__":
         num_workers=2
     )
 
-    device = torch.device('mps')
+    device = torch.device('cuda')
     model = build_unet()
     model = model.to(device)
 
